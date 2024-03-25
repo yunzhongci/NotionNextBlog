@@ -179,7 +179,7 @@ const getSEOMeta = (props, router, global) => {
         slug: 'category',
         type: 'website'
       }
-      case '/memos':
+    case '/memos':
       return {
         title: `雲記-Memos | ${siteConfig('TITLE')}`,
         description: siteConfig('DESCRIPTION'),
