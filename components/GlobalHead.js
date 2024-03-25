@@ -179,6 +179,14 @@ const getSEOMeta = (props, router, global) => {
         slug: 'category',
         type: 'website'
       }
+      case '/memos':
+      return {
+        title: `雲記-Memos | ${siteConfig('TITLE')}`,
+        description: siteConfig('DESCRIPTION'),
+        image: siteConfig('HOME_BANNER_IMAGE'),
+        slug: 'memos',
+        type: 'website'
+      }
     default:
       return {
         title: post ? `${post?.title} | ${siteInfo?.title}` : `${siteInfo?.title} | loading`,
